@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solusi Windows</title>
+  <style>
+    body{
+      font-family:'Courier New',monospace;
+      background:#051019;
+      color:#a7ffcb;
+      padding:20px;
+    }
+    .screen{
+      max-width:800px;
+      margin:30px auto;
+      padding:18px;
+      border:2px solid #0ff;
+      border-radius:6px;
+      background:rgba(0,0,0,0.2);
+    }
+    h1{
+      margin:0 0 10px 0;
+      color:#7ef2b7;
+    }
+    .btn{
+      background:transparent;
+      border:1px solid #0ff;
+      padding:6px 8px;
+      border-radius:4px;
+      cursor:pointer;
+      color:#0ff;
+    }
+    body.simple{
+      background:#fff;
+      color:#000;
+    }
+    body.simple .screen{
+      border-color:#ccc;
+      background:#fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h1>~> Solusi Windows</h1>
+      <button id="toggle" class="btn">Mode Simpel</button>
+    </div>
+    <pre>
+> Selamat datang di Solusi Windows
+> Website ini berisi panduan dan cara mengatasi berbagai masalah di Windows
+> Contoh: error update, driver, jaringan, dan performa lambat
+> 
+> Tips Terbaru:
+> - Cara mempercepat booting Windows
+> - Solusi "Blue Screen" paling umum
+> - Cara memperbaiki File Explorer not responding
+>
+> Temukan panduan lainnya di halaman ini. 
+> Dibuat oleh: Agung Setiawan
+    </pre>
+  </div>
+
+  <script>
+    document.getElementById('toggle').onclick = () => 
+      document.body.classList.toggle('simple');
+  </script>
+</body>
+</html>
