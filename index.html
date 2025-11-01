@@ -1,70 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Solusi Windows</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabel dan Gambar - Solusi Windows</title>
   <style>
-    body{
-      font-family:'Courier New',monospace;
-      background:#051019;
-      color:#a7ffcb;
-      padding:20px;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+      color: #1f2937;
     }
-    .screen{
-      max-width:800px;
-      margin:30px auto;
-      padding:18px;
-      border:2px solid #0ff;
-      border-radius:6px;
-      background:rgba(0,0,0,0.2);
+    header {
+      text-align: center;
+      margin-bottom: 20px;
     }
-    h1{
-      margin:0 0 10px 0;
-      color:#7ef2b7;
+    img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    .btn{
-      background:transparent;
-      border:1px solid #0ff;
-      padding:6px 8px;
-      border-radius:4px;
-      cursor:pointer;
-      color:#0ff;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    body.simple{
-      background:#fff;
-      color:#000;
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
     }
-    body.simple .screen{
-      border-color:#ccc;
-      background:#fafafa;
+    th {
+      background-color: #2563eb;
+      color: white;
+    }
+    tr:hover {
+      background-color: #e0e7ff;
     }
   </style>
 </head>
 <body>
-  <div class="screen">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <h1>~> Solusi Windows</h1>
-      <button id="toggle" class="btn">Mode Simpel</button>
-    </div>
-    <pre>
-> Selamat datang di Solusi Windows
-> Website ini berisi panduan dan cara mengatasi berbagai masalah di Windows
-> Contoh: error update, driver, jaringan, dan performa lambat
-> 
-> Tips Terbaru:
-> - Cara mempercepat booting Windows
-> - Solusi "Blue Screen" paling umum
-> - Cara memperbaiki File Explorer not responding
->
-> Temukan panduan lainnya di halaman ini. 
-> Dibuat oleh: Agung Setiawan
-    </pre>
-  </div>
+  <header>
+    <h1>Solusi Windows</h1>
+    <p>Contoh Tabel dan Gambar di HTML</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2021.svg" 
+     alt="Logo Windows" 
+     width="200px">
+  </header>
 
-  <script>
-    document.getElementById('toggle').onclick = () => 
-      document.body.classList.toggle('simple');
-  </script>
+  <section>
+    <h2>Contoh Tabel Masalah dan Solusi</h2>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Masalah</th>
+        <th>Solusi Singkat</th>
+        <th>Keterangan</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Komputer lambat saat startup</td>
+        <td>Matikan program startup yang tidak perlu</td>
+        <td>Bisa diatur lewat Task Manager ? Startup</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>File Explorer tidak merespons</td>
+        <td>Restart Windows Explorer</td>
+        <td>Ctrl + Shift + Esc ? cari “Windows Explorer” ? Restart</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Blue Screen (BSOD)</td>
+        <td>Periksa driver atau hardware</td>
+        <td>Gunakan perintah “sfc /scannow” di CMD (Administrator)</td>
+      </tr>
+    </table>
+  </section>
 </body>
 </html>
